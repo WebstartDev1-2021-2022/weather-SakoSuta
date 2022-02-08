@@ -1,0 +1,129 @@
+html {
+  background-color: #27174b;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+main {
+  height: 100vh;
+}
+
+.meteo {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.princi {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tempAct {
+  height: 170px;
+  padding: 20px;
+}
+
+.lieu {
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.temp {
+  padding: 10px;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  font-size: 70px;
+}
+
+.slid {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  scroll-snap-align: start;
+}
+
+main > section > figure {
+  margin: 3px;
+  width: 25%;
+  height: 80%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main > section > figure > img {
+  width: 55%;
+  height: 35%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.tempH {
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.semaine {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > .semaine > div {
+  margin: 3px;
+  width: 90%;
+  height: 17%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main > .semaine > div > img {
+  margin: 0px 5px;
+  width: 30%;
+  height: 80%;
+}
+
+.tempS {
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+  margin: 0px 8px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

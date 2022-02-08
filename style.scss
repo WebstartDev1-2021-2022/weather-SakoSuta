@@ -1,0 +1,120 @@
+html
+{
+    background-color: #27174b;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+main
+{
+    height: 100vh;
+}
+
+.meteo
+{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.princi
+{
+    justify-content: center;
+}
+
+.tempImg
+{
+    height:170px;
+    padding: 20px;
+}
+
+.lieu
+{
+    
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size:50px;
+}
+
+.temp
+{
+    padding: 10px;
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+.slid
+{
+    //background-color: burlywood;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    scroll-snap-align: start;
+}
+
+main > section > figure
+{
+    margin: 3px;
+    width: 25%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.068);
+    flex-shrink: 0;
+}
+
+main > section > figure > img
+{
+    width: 55%;
+    height: 35%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.tempH
+{
+    font-family: 'Dongle', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.semaine
+{
+    //background-color: cadetblue;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > .semaine > div
+{
+    margin: 3px;
+    width: 90%;
+    height: 17%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.068);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+main > .semaine > div > img
+{
+    margin: 0px 5px;
+    width: 30%;
+    height: 80%;
+}
+
+.tempS
+{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    margin: 0px 8px;
+    text-align: center;
+}
+
+//scroll-padding: x proximaty
