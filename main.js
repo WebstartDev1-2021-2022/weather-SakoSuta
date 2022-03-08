@@ -46,7 +46,7 @@ const getWeatherOf = async (position) =>
 
         let week = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 
-        for(let tj=0; tj < 5; tj++)
+        for(let tj=0; tj < 7; tj++)
         {
             let dt_day = new Date(weatherData.daily[tj].dt * 1000).getDay()
             jour[tj].innerHTML = `<p class="tempSJ">
