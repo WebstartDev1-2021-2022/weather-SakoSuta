@@ -1,6 +1,6 @@
 {
 
-    "background_color": "#312b31",
+    "background_color": "#008ac3",
 
     "orientation": "portrait",
 
@@ -32,7 +32,7 @@
 
     "name": "Ma météo",
 
-    "short_name": "Météo12",
+    "short_name": "Météo",
 
     "start_url": "/index.html"
 
