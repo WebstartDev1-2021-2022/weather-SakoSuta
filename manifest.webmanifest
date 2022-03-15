@@ -23,7 +23,7 @@
 
             "src": "img/01d.png",
 
-            "type": "image/svg+xml",
+            "type": "image/png",
 
             "sizes": "512x512"
 
@@ -32,7 +32,7 @@
 
     "name": "Ma météo",
 
-    "short_name": "Météo1",
+    "short_name": "Météo12",
 
     "start_url": "/index.html"
 
