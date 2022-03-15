@@ -1,11 +1,10 @@
 // TODO: Récupérer les éléments du DOM dans des constantes 
 
 // Constant
-const tempImg = document.querySelector(".tempImg")
-const lieu = document.querySelector(".lieu")
-const temp = document.querySelector(".temp")
-const heure = document.querySelectorAll(".heure")
-const jour = document.querySelectorAll(".jour")
+const html = document.querySelector("html")
+const main = document.querySelector("main")
+const template = document.querySelector("template")
+const charge = document.querySelector(".charge")
 
 // Requête fetch
 const apiKey = "3fd72506573bbc8268962948af289955"
@@ -30,6 +29,30 @@ const getWeatherOf = async (position) =>
         const results = await allPromise
         const weatherData = await results[0].json()
         const cityData = await results[1].json()
+
+        var clone = document.importNode(template.content, true)
+        main.removeChild(charge)
+        main.appendChild(clone)
+
+        // Constant
+        const tempImg = document.querySelector(".tempImg")
+        const lieu = document.querySelector(".lieu")
+        const temp = document.querySelector(".temp")
+        const heure = document.querySelectorAll(".heure")
+        const jour = document.querySelectorAll(".jour")
+
+        const sunrise = new Date(weatherData.current.sunrise * 1000)
+        const sunset = new Date(weatherData.current.sunset * 1000)
+        let current_dt = new Date(weatherData.current.dt * 1000)
+
+        if (sunrise <= current_dt && current_dt < sunset )
+        {
+            html.style.backgroundColor = "#008AC3"
+        } 
+        else
+        {
+            body.style.backgroundColor = "#27174b"
+        }
 
         // Temps Actuel
         temp.innerText = `${Math.trunc(weatherData.current.temp)}°`

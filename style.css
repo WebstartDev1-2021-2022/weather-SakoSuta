@@ -1,11 +1,27 @@
 html {
-  background-color: #27174b;
-  background-attachment: fixed;
   color: #fff;
 }
 
 main {
   height: 110vh;
+}
+
+.charge {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#27174b), color-stop(#2a326b), color-stop(#264f8b), color-stop(#1a6ca8), to(#008ac3));
+  background-image: linear-gradient(to top, #27174b, #2a326b, #264f8b, #1a6ca8, #008ac3);
+}
+
+main > section > p {
+  padding-top: 40%;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+main > section > img {
+  margin-top: 15%;
+  margin-left: 25%;
 }
 
 .meteo {
@@ -30,6 +46,12 @@ main {
 .tempImg {
   height: 150px;
   padding: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .lieu {

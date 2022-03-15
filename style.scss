@@ -1,13 +1,33 @@
 html
 {
-    background-color: #27174b;
-    background-attachment: fixed;
     color: #fff;
 }
 
 main
 {
     height: 110vh;
+}
+
+.charge
+{
+    height: 100%;
+    background-image: linear-gradient(to top, #27174b, #2a326b, #264f8b, #1a6ca8, #008ac3);
+}
+
+main > section > p
+
+{
+    padding-top: 40%;
+    font-family: 'Dongle', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+main > section > img
+
+{
+    margin-top: 15%;
+    margin-left: 25%;
 }
 
 .meteo
@@ -27,6 +47,8 @@ main
 {
     height:150px;
     padding: 20px;
+    display: inline-flex;
+    align-items: center;
 }
 
 .lieu
